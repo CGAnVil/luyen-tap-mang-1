@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let array =[]
+    for(let i= 0; i < 10 ; i++){
+        array[i] = prompt('nhập các giá trị phần tử')
+    }
+    let number = parseInt(prompt('Nhập số V:'))
+    let check = false
+    for (let i = 0; i<array.length; i++){
+        if (number == array[i]){
+            check = true
+        }
+    }
+    if(check == true){
+        document.write(number + ' is in the array')
+    }else {
+        document.write(number + ' is  not in the array')
+    }
+</script>
+</body>
+</html>

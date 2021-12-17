@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let array = []
+    for (let i = 0; i < 10; i++) {
+        array[i] = prompt('nhập các giá trị phần tử')
+    }
+    let number = parseInt(prompt('Nhập số V:'))
+    for (i = 0; i < 10; i++) {
+        if (number == array[i]) {
+            for (j = i; j < 9; j++) {
+                array[j] = array[j + 1]
+            }
+        }
+    }
+    array[array.length -1] = 0
+    document.write(array)
+</script>
+</body>
+</html>
